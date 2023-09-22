@@ -1,0 +1,113 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Poppins:ital,wght@0,400;1,300&display=swap");
+
+:root {
+  --primary-clr: #4495fa;
+  --accent-clr: #9411c2;
+  --max-width: 450px;
+  --clr-netral-black: #262626;
+  --clr-neutral-white: #fff;
+  --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --transition: all 0.3s ease-in;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  background-color: var(--clr-neutral-white);
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container-center,
+.card {
+  max-width: var(--max-width);
+  width: 80vw;
+  box-shadow: var(--box-shadow);
+  /* text-align: center; */
+  border: 1px solid lightgray;
+  padding: 0 2rem;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+input {
+  width: 100%;
+  padding: 10px 0;
+  /* border-radius: 14px; */
+  border-width: 1px solid lightgray;
+  outline: none;
+}
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form-group {
+  margin-bottom: 0.8rem;
+}
+
+.btn-primary {
+  display: block;
+  margin: 1.5rem auto;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--primary-clr);
+  border: none;
+  outline: none;
+  color: var(--clr-neutral-white);
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 500;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.title p {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.title h1 {
+  color: var(--primary-clr);
+}
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+:placeholder-shown {
+  padding-left: 5px;
+}
+.btn-primary:hover {
+  background-color: #bedafd;
+  color: #262626;
+}
+.main-title {
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+.form-group {
+  margin-top: 1.3rem;
+}
+.main-title .line {
+  width: 225px;
+  height: 2px;
+  background-color: var(--primary-clr);
+  margin-top: 2px;
+  transition: var(--transition);
+  transform: translate(-100%);
+}
+
+.main-title {
+  overflow: hidden;
+}
+.card:hover .line {
+  transform: translate(0px);
+}
